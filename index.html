@@ -18,7 +18,6 @@
         <style>
             /****************************************/
             /* custom scroll bar
-
             /* width */
             ::-webkit-scrollbar {
             width: 50px;
@@ -47,21 +46,21 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">data.analyst.dave@gmail.com</span>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" style="opacity: 0.8;" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="mailto:data.analyst.dave@gmail.com">
+                <span class="d-block d-lg-none"><button type="button" href="mailto:data.analyst.dave@gmail.com" class="btn btn-info btn-lg">data.analyst.dave@gmail.com</button></span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://media-exp1.licdn.com/dms/image/C4D03AQHY2WQuPSZo_Q/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=cMmjvRCg5LSka9B_-eUmtqCzh1lNsV92qFbYPA6djiM" alt="" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Recent Projects</a></li>
+                    <li class="nav-item ml-auto"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item ml-auto"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item ml-auto"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item ml-auto"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item ml-auto"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
+                    <li class="nav-item ml-auto"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item ml-auto"><a class="nav-link js-scroll-trigger" href="#projects">Recent Projects</a></li>
                 </ul>
             </div>
         </nav>
@@ -88,6 +87,65 @@
                 </div>
             </section>
             <hr class="m-0" />
+            <!-- Recent Projects -->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">&nbsp;</h2>
+                    <div class="container">
+                        <div class="content-section-heading text-center">
+                          <h3 class="text-secondary mb-0">Portfolio</h3>
+                          <h2 class="mb-5">Recent Projects</h2>
+                        </div>
+                        <div class="row no-gutters">
+                          <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                              <div class="caption">
+                                <div class="caption-content">
+                                  <div class="h3">Web Scraping</div>
+                                  <p class="mb-0">Technology Stack: Python, MongoDB, Webdriver, Bootstrap, Splinter</p>
+                                </div>
+                              </div>
+                              <img class="img-fluid" src="assets/img/screenshot7-21-2020_1.png" alt="">
+                            </a>
+                          </div>
+                          <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                              <div class="caption">
+                                <div class="caption-content">
+                                  <div class="h3">D3 + Custom CSS</div>
+                                  <p class="mb-0">Technology Stack: Python, MongoDB, Webdriver, Bootstrap, Splinter</p>
+                                </div>
+                              </div>
+                              <img class="img-fluid" src="assets/img/screenshot7-21-2020_2.png" alt="">
+                            </a>
+                          </div>
+                          <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                              <div class="caption">
+                                <div class="caption-content">
+                                  <div class="h3">Orange</div>
+                                  <p class="mb-0">Technology Stack: Python, MongoDB, Webdriver, Bootstrap, Splinter</p>
+                                </div>
+                              </div>
+                              <img class="img-fluid" src="assets/img/screenshot7-21-2020_3.png" alt="">
+                            </a>
+                          </div>
+                          <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                              <div class="caption">
+                                <div class="caption-content">
+                                  <div class="h3">Teal</div>
+                                  <p class="mb-0">Technology Stack: Python, MongoDB, Webdriver, Bootstrap, Splinter</p>
+                                </div>
+                              </div>
+                              <img class="img-fluid" src="assets/img/screenshot7-21-2020_4.png" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+            <!-- Portfolio -->
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
@@ -341,65 +399,7 @@
 
             </section>
             <hr class="m-0" />
-            <!-- Recent Projects -->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">&nbsp;</h2>
-                    <div class="container">
-                        <div class="content-section-heading text-center">
-                          <h3 class="text-secondary mb-0">Portfolio</h3>
-                          <h2 class="mb-5">Recent Projects</h2>
-                        </div>
-                        <div class="row no-gutters">
-                          <div class="col-lg-6">
-                            <a class="portfolio-item" href="#!">
-                              <div class="caption">
-                                <div class="caption-content">
-                                  <div class="h2">Stationary</div>
-                                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                                </div>
-                              </div>
-                              <img class="img-fluid" src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14293_hires.jpg" alt="">
-                            </a>
-                          </div>
-                          <div class="col-lg-6">
-                            <a class="portfolio-item" href="#!">
-                              <div class="caption">
-                                <div class="caption-content">
-                                  <div class="h2">Ice Cream</div>
-                                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                                </div>
-                              </div>
-                              <img class="img-fluid" src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23853_hires.jpg" alt="">
-                            </a>
-                          </div>
-                          <div class="col-lg-6">
-                            <a class="portfolio-item" href="#!">
-                              <div class="caption">
-                                <div class="caption-content">
-                                  <div class="h2">Strawberries</div>
-                                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                                </div>
-                              </div>
-                              <img class="img-fluid" src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23853_hires.jpg" alt="">
-                            </a>
-                          </div>
-                          <div class="col-lg-6">
-                            <a class="portfolio-item" href="#!">
-                              <div class="caption">
-                                <div class="caption-content">
-                                  <div class="h2">Workspace</div>
-                                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                              </div>
-                              <img class="img-fluid" src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14293_hires.jpg" alt="">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </section>
-            <!-- Portfolio -->
+            
         </div>
 
         <!-- Scroll to Top Button-->
