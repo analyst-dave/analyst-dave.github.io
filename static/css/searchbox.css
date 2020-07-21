@@ -1,0 +1,103 @@
+input[type=text] {
+  align-self: center;
+  text-align: center;
+  font-size: large;
+  height:30px;
+  width: 400px;
+}
+
+/* The styles for odd class */
+.odd {
+  background-color: steelblue;
+  color: aliceblue;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+/* The styles for even class */
+.even {
+  background-color: slategrey;
+  color: gray;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+/****************************************/
+
+/* The styles for id=table-area */
+#table-area {
+  background-color: slategray;
+}
+
+/* The styles for id=ufo-table_length (show 50 entries) */
+#ufo-table_length {
+  color: #4e5d6c;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 0px;
+}
+
+/* The styles for id=ufo-table_filter (search entire table) */
+#ufo-table_filter {
+  color: #4e5d6c;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* The styles for all <th> of id=table-area (columns)*/
+#table-area th {
+  box-shadow: inset 0 0 40px slategrey;
+  background-color: lightgrey;
+  color: dimgrey;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+/* The styles for id=ufo-table_info (showing entries) */
+#ufo-table_info {
+  color: #4e5d6c;
+  text-align: left;
+  font-size: 1.5rem;
+  padding-left: 5px;
+}
+
+/* The styles for id=ufo-table_paginate */
+#ufo-table_paginate {
+  color: #4e5d6c;
+  font-size: smaller;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+/****************************************/
+/* custom scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 5px white;
+  background: slategrey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bacddd; 
+}
