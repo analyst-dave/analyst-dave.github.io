@@ -52,19 +52,7 @@
 	font: inherit;
   }
   
-  html {
-	overflow-x: hidden;
-  }
   
-  body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	min-width: 400px;
-	min-height: 100vh;
-	background: #252525;
-  }
   
   [id="search-btn"] {
 	position: absolute;
@@ -84,8 +72,8 @@
 	position: relative;
 	z-index: 2;
 	margin-left: -1.25em;
-	width: 5em;
-	height: 5em;
+	width: 4em;
+	height: 4em;
 	border-radius: 50%;
 	transform: translate(var(--pos, -10em)) rotate(45deg);
 	background: hsl(calc(336 - var(--i) * 269), calc(77% + var(--i) * 2%), calc(49% + var(--i) * 13%));
@@ -120,13 +108,13 @@
   }
   
   [id="search-bar"] {
-	margin-right: -1.25em;
+	margin-right: -1em;
 	border: none;
 	padding: 0 1em;
-	width: 20em;
-	height: 3.25em;
-	border-radius: 3.25em;
-	transform: translate(var(--pos, 10em));
+	width: 12em;
+	height: 2.6em;
+	border-radius: 2.6em;
+	transform: translate(var(--pos, 6em));
 	background: #3f324d;
 	--cp: inset(-2em var(--pos, 100%) -2em -2em);
 	-webkit-clip-path: var(--cp);
