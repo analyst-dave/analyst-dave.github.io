@@ -88,11 +88,157 @@
         );
       }
     </style>
+    <style>
+      /* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+/* Circle */
+nav.circle ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.circle ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.circle ul li a:hover:after {
+  -webkit-animation: circle 2s ease-in forwards;
+}
+
+/* SHIFT */
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: slategrey;
+    border-top-right-radius: 100%;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: lightgrey;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+    </style>
   </head>
   <body id="page-top">
     <!-- Navigation-->
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fill"
       style="opacity: 0.95;background-image:
       linear-gradient(
         to right,
@@ -180,7 +326,7 @@
             <a href="https://analyst-dave.github.io/"><i class="fas fa-address-card"></i> analyst-dave<span class="text-primary">.github.io</span></a>
           </h2>
           <div class="subheading mb-5"><a type="button" class="btn btn-sm" data-toggle="modal" data-target="#LinkModal">
-            <i class="fas fa-home"></i>  168 Blackrock Drive · Sacramento, CA 95835</a> <i class="fas fa-mobile-alt"></i> (408) 909-3681 
+            <i class="fas fa-home"></i> 168 Blackrock Drive · Sacramento, CA 95835 <i class="fas fa-map-marked-alt"></i> </a> <i class="fas fa-mobile-alt"></i> (408) 909-3681 
             <a href="mailto:data.analyst.dave@gmail.com"> <i class="fas fa-envelope"></i> data.analyst.dave@gmail.com</a>
           </div>
           <div class="text-center">
@@ -241,11 +387,10 @@
           </div>
           <div class="">
               
-            <p class="card p-3"
+            <p class="rounded p-3"
                style="font-family: Arial, Helvetica, sans-serif; 
                       font-size: small; 
                       color:#343a40; 
-                      background-color: lightslategrey; 
                       opacity: 0.85; 
                       display: block; 
                       background-image:linear-gradient(to right,lightslategrey,#17a2b8);">
@@ -260,10 +405,10 @@
             <i class="fab fa-css3-alt"></i>
             Custom css search box, scroll bars, smooth
             scroll as well as portfolio gallery with a custom mouse-over hover effect.<br/>
-            Click on the github link below or here for a  
+            Click on the github link below or here <i class="fas fa-sign-in-alt"></i> 
             <a class="social-icon" href="https://remy177.github.io/" target="_blank">
             <button type="button" href="http://remy177.github.io" class="btn btn-info btn-md rounded" target="_blank">
-            <i class="fab fa-github"></i> Live Demo</button> </a> of jQuery datatable to display tabular data.
+            <i class="fab fa-github"></i> Live Demo</button> </a> of jQuery datatable for displaying tabular data.
           </p>
         </div>
           <div class="social-icons">
@@ -516,7 +661,7 @@
             snowboarding.</b>
           </p>
           <p class="col-md-8 rounded p-2 m-2" 
-              style="float:left; font-family: Arial, Helvetica, sans-serif; font-size: medium; color: grey; background-color: black; opacity: 0.8;">
+              style="float:left; font-family: Arial, Helvetica, sans-serif; font-size: medium; color: black; background-color: darkgrey; opacity: 0.6;">
               <i class="fas fa-comment-alt"></i> <b>I am an aspiring chef, and I spend a large amount of my free time
               exploring the latest technology advancements in the front-end web
               development world.</b>
@@ -797,7 +942,7 @@
               <span class="fa-li"
                 ><i class="fas fa-trophy text-warning"></i
               ></span>
-              Data Engineering on Google Cloud Platform (<i class="fas fa-list-ol"></i> 5-course
+              Data Engineering on Google Cloud Platform (<i class="fas fa-clipboard-list"></i> 5-course
               Specialization)<br />
               <a
                 href="https://www.coursera.org/account/accomplishments/specialization/certificate/CGQD5JTS9Y6V" target="_blank"
@@ -806,7 +951,7 @@
             </li>
             <li>
               <span class="fa-li"
-                ><i class="fas fa-list-ol"></i></span>
+                ><i class="fas fa-clipboard-list"></i></span>
                 <i class="fas fa-caret-right"></i> Building Resilient Streaming Systems on Google Cloud Platform<br />
               <a
                 href="https://www.coursera.org/account/accomplishments/certificate/9VWN2W4YZRD4" target="_blank"
@@ -815,7 +960,7 @@
             </li>
             <li>
               <span class="fa-li"
-                ><i class="fas fa-list-ol"></i></span>
+                ><i class="fas fa-clipboard-list"></i></span>
                 <i class="fas fa-caret-right"></i> Serverless Data Analysis with Google BigQuery and Cloud
               Dataflow<br />
               <a
@@ -825,7 +970,7 @@
             </li>
             <li>
               <span class="fa-li"
-                ><i class="fas fa-list-ol"></i></span>
+                ><i class="fas fa-clipboard-list"></i></span>
                 <i class="fas fa-caret-right"></i> Serverless Machine Learning with Tensorflow on Google Cloud Platform<br />
               <a
                 href="https://www.coursera.org/account/accomplishments/certificate/7PM3Z7GJUZB4" target="_blank"
@@ -834,7 +979,7 @@
             </li>
             <li>
               <span class="fa-li"
-                ><i class="fas fa-list-ol"></i></span>
+                ><i class="fas fa-clipboard-list"></i></span>
                 <i class="fas fa-caret-right"></i> Leveraging Unstructured Data with Cloud Dataproc on Google Cloud
               Platform<br />
               <a
@@ -844,7 +989,7 @@
             </li>
             <li>
               <span class="fa-li"
-                ><i class="fas fa-list-ol"></i></span>
+                ><i class="fas fa-clipboard-list"></i></span>
                 <i class="fas fa-caret-right"></i> Google Cloud Platform Big Data and Machine Learning
               Fundamentals<br />
               <a
