@@ -93,18 +93,24 @@
     <!-- Navigation-->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      style="opacity: 0.95;"
+      style="opacity: 0.95;background-image:
+      linear-gradient(
+        to right,
+        #17a2b8,
+        lightslategrey
+      );"
       id="sideNav"
     >
       <a
         class="navbar-brand js-scroll-trigger"
-        href="mailto:data.analyst.dave@gmail.com"
+        href="http://www.linkedin.com/in/davidlai/"
+        target="_blank"
       >
         <span class="d-block d-lg-none"><button
             type="button"
             href="mailto:data.analyst.dave@gmail.com"
-            class="btn btn-info btn-lg">
-            data.analyst.dave@gmail.com
+            class="btn btn-info btn-md">
+            <i class="fab fa-linkedin"></i> linkedin profile
           </button></span>
         <span class="d-none d-lg-block"
           ><img
@@ -127,35 +133,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item subheading ml-auto">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About <i class="fas fa-address-card"></i></a>
           </li>
           <li class="nav-item subheading ml-auto">
-            <a class="nav-link js-scroll-trigger" href="#projects"
-              >Recent Projects</a
-            >
+            <a class="nav-link js-scroll-trigger" href="#projects">Recent Projects <i class="fas fa-clock"></i></i></a>
           </li>
           <li class="nav-item subheading ml-auto">
-            <a class="nav-link js-scroll-trigger" href="#interests"
-              >Interests</a
-            >
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests <i class="fab fa-phoenix-framework"></i></a>
           </li>
           <li class="nav-item subheading ml-auto">
-            <a class="nav-link js-scroll-trigger" href="#experience"
-              >Experience</a
-            >
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience <i class="fas fa-briefcase"></i></a>
           </li>
           <li class="nav-item subheading ml-auto">
-            <a class="nav-link js-scroll-trigger" href="#education"
-              >Education</a
-            >
+            <a class="nav-link js-scroll-trigger" href="#education">Education <i class="fas fa-user-graduate"></i></a>
           </li>
           <li class="nav-item subheading ml-auto">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills <i class="fas fa-american-sign-language-interpreting"></i></a>
           </li>
           <li class="nav-item subheading ml-auto">
-            <a class="nav-link js-scroll-trigger" href="#awards"
-              >Certifications</a
-            >
+            <a class="nav-link js-scroll-trigger" href="#awards">Certifications <i class="fas fa-award"></i></a>
           </li>
           <li class="nav-item ml-auto">
             <div>
@@ -181,14 +177,11 @@
       <section class="resume-section" id="about">
         <div class="resume-section-content">
           <h2 class="mb-0">
-            data.analyst.dave
-            <span class="text-primary">@gmail.com</span>
+            <a href="https://analyst-dave.github.io/"><i class="fas fa-address-card"></i> analyst-dave<span class="text-primary">.github.io</span></a>
           </h2>
-          <div class="subheading mb-5">
-            168 Blackrock Drive · Sacramento, CA 95835 · (408) 909-3681 ·
-            <a href="mailto:data.analyst.dave@gmail.com"
-              >data.analyst.dave@gmail.com</a
-            >
+          <div class="subheading mb-5"><a type="button" class="btn btn-sm" data-toggle="modal" data-target="#LinkModal">
+            <i class="fas fa-home"></i>  168 Blackrock Drive · Sacramento, CA 95835</a> <i class="fas fa-mobile-alt"></i> (408) 909-3681 
+            <a href="mailto:data.analyst.dave@gmail.com"> <i class="fas fa-envelope"></i> data.analyst.dave@gmail.com</a>
           </div>
           <div class="text-center">
             <!-- Button trigger modal -->
@@ -200,7 +193,7 @@
               data-target="#myModal"
             >
               <img
-                style="max-width: 400px;"
+                style="max-width: 400px; max-height: 250px;"
                 class="img img-sm rounded"
                 src="assets/img/1.jpg"
                 alt=""
@@ -246,17 +239,23 @@
               </div>
             </div>
           </div>
-          <div class="">  
+          <div class="">
+              
             <p class="card p-3"
-              style="font-family: Arial, Helvetica, sans-serif; font-size: medium; color: aliceblue; background-color: lightslategrey; display: block;">
-            I am experienced in leveraging agile frameworks to provide an
-            iterative approach for efficient result... This site is still in progress and
+               style="font-family: Arial, Helvetica, sans-serif; 
+                      font-size: small; 
+                      color:#343a40; 
+                      background-color: lightslategrey; 
+                      opacity: 0.8; 
+                      display: block; 
+                      background-image:linear-gradient(to right,lightslategrey,#17a2b8);">
+            This site is still in progress and
             meant for aesthetic demostration, showcasing the following UI
             components: <br/>
             <i class="fas fa-chevron-circle-right"></i>
             <i class="fab fa-bootstrap"></i>
-            Bootstrap responsive <b>NAVBAR</b>, popover <b>MODAL</b> for videos
-            and a <b>CAROUSEL</b> gallery slider.<br/>
+            Bootstrap responsive <b>NAVBAR</b>, popover <b>MODAL</b> for video and map
+            as well as a <b>CAROUSEL</b> gallery slider.<br/>
             <i class="fas fa-chevron-circle-right"></i>
             <i class="fab fa-css3-alt"></i>
             Custom css search box, scroll bars, smooth
@@ -270,25 +269,25 @@
           <div class="social-icons">
             <a
               class="social-icon"
-              href="https://www.linkedin.com/in/davidlai/"
+              href="http://www.linkedin.com/in/davidlai/"
               target="_blank"
               ><i class="fab fa-linkedin-in"></i
             ></a>
             <a
               class="social-icon"
-              href="https://remy177.github.io/"
+              href="http://remy177.github.io/"
               target="_blank"
               ><i class="fab fa-github"></i
             ></a>
             <a
               class="social-icon"
-              href="https://twitter.com/vapeoneinc"
+              href="http://twitter.com/vapeoneinc"
               target="_blank"
               ><i class="fab fa-twitter"></i
             ></a>
             <a
               class="social-icon"
-              href="https://www.facebook.com/david.lai.hk"
+              href="http://www.facebook.com/david.lai.hk"
               target="_blank"
               ><i class="fab fa-facebook-f"></i
             ></a>
@@ -302,7 +301,7 @@
           <div class="container">
             <div class="content-section-heading text-center">
               <!--h3 class="text-secondary mb-0">Portfolio</h3-->
-              <h2 class="mb-5">Recent Projects</h2>
+              <h2 class="mb-5"><i class="fas fa-business-time"></i> Recent Projects</h2>
             </div>
             <div class="row no-gutters">
               <div class="col-lg-6">
@@ -384,7 +383,7 @@
       <!-- Interests-->
       <section class="resume-section" id="interests">
         <div class="resume-section-content">
-          <h3 class="mb-5">Interests</h3>
+          <h2 class="mb-5"><i class="fab fa-phoenix-framework"></i> Interests</h2>
 
         <style>
           .carousel-item {
@@ -428,7 +427,7 @@
                     class="btn btn-outline-info btn-lg rounded"
                     href="http://www.linkedin.com/in/davidlai/"
                     role="button"
-                    >LinkedIn</a
+                    ><i class="fab fa-linkedin"></i> LinkedIn</a
                   >
                 </p>
               </div>
@@ -445,7 +444,7 @@
                     class="btn btn-outline-info btn-lg"
                     href="http://www.linkedin.com/in/davidlai/"
                     role="button"
-                    >LinkedIn</a
+                    ><i class="fab fa-linkedin"></i> LinkedIn</a
                   >
                 </p>
               </div>
@@ -462,7 +461,7 @@
                     class="btn btn-outline-info btn-lg"
                     href="http://www.linkedin.com/in/davidlai/"
                     role="button"
-                    >LinkedIn</a
+                    ><i class="fab fa-linkedin"></i> LinkedIn</a
                   >
                 </p>
               </div>
@@ -479,7 +478,7 @@
                     class="btn btn-outline-info btn-lg"
                     href="http://www.linkedin.com/in/davidlai/"
                     role="button"
-                    >LinkedIn</a
+                    ><i class="fab fa-linkedin"></i> LinkedIn</a
                   >
                 </p>
               </div>
@@ -512,13 +511,13 @@
         <div class="col-md-12">  
           <p class="col-md-8 rounded p-2 m-2"
             style="float:right; font-family: Arial, Helvetica, sans-serif; font-size: medium; color: aliceblue; background-color: grey; opacity: 0.8;">
-            <b>Father of a baby girl, love being outdoor with the family and
+            <i class="far fa-comment-alt"></i> <b>Father of a baby girl, love being outdoor with the family and
             the dog... I also enjoy mountain biking, free climbing, and
             snowboarding.</b>
           </p>
           <p class="col-md-8 rounded p-2 m-2" 
               style="float:left; font-family: Arial, Helvetica, sans-serif; font-size: medium; color: grey; background-color: black; opacity: 0.8;">
-              <b>I am an aspiring chef, and I spend a large amount of my free time
+              <i class="fas fa-comment-alt"></i> <b>I am an aspiring chef, and I spend a large amount of my free time
               exploring the latest technology advancements in the front-end web
               development world.</b>
           </p>
@@ -529,7 +528,7 @@
       <!-- Experience-->
       <section class="resume-section" id="experience">
         <div class="resume-section-content">
-          <h2 class="mb-5">Experience</h2>
+          <h2 class="mb-5"><i class="fas fa-briefcase"></i> Experience</h2>
           <div
             class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
@@ -537,19 +536,19 @@
               <h3 class="mb-0">Founder</h3>
               <div class="subheading mb-3">Vape One Inc</div>
               <p>
-                - Directed the company from grand-opening to reaching
+                <i class="fas fa-location-arrow"></i> Directed the company from grand-opening to reaching
                 quarter-million revenue annually.
               </p>
 
               <p>
-                - Analyzed and tracked performance KPIs on dashboard Analytics
+                <i class="fas fa-location-arrow"></i> Analyzed and tracked performance KPIs on dashboard Analytics
                 (Square, IG, FB, Yelp) to develop marketing strategies and
                 company's directions, set sales targets and established spending
                 budgets.
               </p>
 
               <p>
-                - Launched and upkeep our eCommerce site, inventory cycle
+                <i class="fas fa-location-arrow"></i> Launched and upkeep our eCommerce site, inventory cycle
                 counting, running marketing campaigns as well as adjusting
                 staff's schedules and purchasing volume preemptively according
                 to seasonal analytics and sales trends.
@@ -571,15 +570,15 @@
                 Oracle BAM (Business Activity Monitoring)
               </p>
               <p>
-                - Implemented Asynchronous Servlet to significantly reduce the
+                <i class="fas fa-location-arrow"></i> Implemented Asynchronous Servlet to significantly reduce the
                 number of threads use in our Streaming Charts and Reports.
               </p>
               <p>
-                - Enhanced our legacy pull ActiveData mechanism to a new push
+                <i class="fas fa-location-arrow"></i> Enhanced our legacy pull ActiveData mechanism to a new push
                 ActiveData mechanism by way of JMS Topics (Pub/Sub).
               </p>
               <p>
-                - Ported over 50,000 lines of legacy c# code to Java, fixing
+                <i class="fas fa-location-arrow"></i> Ported over 50,000 lines of legacy c# code to Java, fixing
                 more than 100 old + new bugs along the way.
               </p>
             </div>
@@ -594,17 +593,17 @@
               <h3 class="mb-0">Senior Web Developer</h3>
               <div class="subheading mb-3">Silicon Storage Technology</div>
               <p>
-                - Analyze business processes directly with end-users and turn
+                <i class="fas fa-location-arrow"></i> Analyze business processes directly with end-users and turn
                 business requirements into web-based enterprise solutions.
               </p>
               <p>
-                - Designed/implemented the entire report engine framework,
+                <i class="fas fa-location-arrow"></i> Designed/implemented the entire report engine framework,
                 sub-classed into various report types to dynamically generate
                 reports for different internal business units and external
                 customers.
               </p>
               <p>
-                - Architect and prototype the base system framework for our
+                <i class="fas fa-location-arrow"></i> Architect and prototype the base system framework for our
                 version 2 in-house CRM application.
               </p>
             </div>
@@ -617,17 +616,17 @@
               <h3 class="mb-0">Software Engineer</h3>
               <div class="subheading mb-3">NexTag</div>
               <p>
-                - Responsible for the Merchant Import components of their
+                <i class="fas fa-location-arrow"></i> Responsible for the Merchant Import components of their
                 e-commerce price comparison platform.
               </p>
               <p>
-                - Defined XML rules for different forms of data feeds and
+                <i class="fas fa-location-arrow"></i> Defined XML rules for different forms of data feeds and
                 implemented XML filters to refine search result using Java
                 regular expression to extract product attributes from its text
                 description (data-mining).
               </p>
               <p>
-                - Refactored our core Import engine to decouple the dependency
+                <i class="fas fa-location-arrow"></i> Refactored our core Import engine to decouple the dependency
                 between our feed-based and P2P self-managed-listing import.
               </p>
             </div>
@@ -640,13 +639,13 @@
               <h3 class="mb-0">Software Engineer (Summer Internship)</h3>
               <div class="subheading mb-3">Google</div>
               <p>
-                - Responsible for various frontend components of the Google
+                <i class="fas fa-location-arrow"></i> Responsible for various frontend components of the Google
                 Enterprise Search Appliance including the handlers and
                 controller (Java Servlets), templates (GXP - Google XML Page),
                 HTML mock-ups and connections to backend (Python).
               </p>
               <p>
-                - Ported legacy Goolge Template files to GXP (Google XML Page)
+                <i class="fas fa-location-arrow"></i> Ported legacy Goolge Template files to GXP (Google XML Page)
                 which has internationalization(i18n) and localization(l10n)
                 support. - Overall knowledge of search engines and the industry
                 business models.
@@ -661,11 +660,11 @@
               <h3 class="mb-0">Software Engineer (Summer Internship)</h3>
               <div class="subheading mb-3">Sun Microsystems</div>
               <p>
-                - Designed & implemented a menu-driven program in Unix shell
+                <i class="fas fa-location-arrow"></i> Designed & implemented a menu-driven program in Unix shell
                 script to monitor NTS connections.
               </p>
               <p>
-                - Perform sanity, stress, performance and regression testing on
+                <i class="fas fa-location-arrow"></i> Perform sanity, stress, performance and regression testing on
                 system modules and device drivers.
               </p>
             </div>
@@ -679,7 +678,7 @@
       <!-- Education-->
       <section class="resume-section" id="education">
         <div class="resume-section-content">
-          <h2 class="mb-5">Education</h2>
+          <h2 class="mb-5"><i class="fas fa-user-graduate"></i> Education</h2>
           <div
             class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
@@ -687,29 +686,29 @@
               <h3 class="mb-0">
                 UC Davis Continuing and Professional Education
               </h3>
-              <div class="subheading mb-3">Data Analytics 6-months Program</div>
+              <div class="subheading mb-3"><i class="fas fa-graduation-cap"></i> Data Analytics 6-months Program</div>
               <div>
                 <p>
-                  Module 1(weeks 1-2): Advanced Excel [Excel, Pivot Tables, VBA
+                  <i class="fas fa-calendar-check"></i> Module 1(weeks 1-2): Advanced Excel [Excel, Pivot Tables, VBA
                   Script, Statistics Modeling]
                 </p>
                 <p>
-                  Module 2(weeks 3-9): Python Data Analytics [Python, Jupiter,
+                  <i class="fas fa-calendar-check"></i> Module 2(weeks 3-9): Python Data Analytics [Python, Jupiter,
                   NumPy, Pandas, Matplotlib, Tweepy]
                 </p>
                 <p>
-                  Module 3(weeks 10-12): Databases [SQL, NoSQL, MySQL, MongoDB]
+                  <i class="fas fa-calendar-check"></i> Module 3(weeks 10-12): Databases [SQL, NoSQL, MySQL, MongoDB]
                 </p>
                 <p>
-                  Module 4(weeks 13-19): Web Visualization [Bootstrap,
+                  <i class="fas fa-calendar-alt"></i> Module 4(weeks 13-19): Web Visualization [Bootstrap,
                   Dashboard, JavaScript, AJAX, D3, Leaflet]
                 </p>
                 <p>
-                  Module 5(weeks 20-23): Advanced Big Data Topics [Tableau,
+                  <i class="fas fa-calendar-alt"></i> Module 5(weeks 20-23): Advanced Big Data Topics [Tableau,
                   Hadoop, Machine Learning]
                 </p>
               </div>
-              <p>On-Going till Sept 2020 · Current Grade: A+</p>
+              <p><i class="fas fa-running"></i> On-Going till Sept 2020 <i class="fas fa-running"></i> Current Grade: A+</p>
             </div>
             <div class="flex-shrink-0">
               <span class="text-primary">March 2020 - September 2020</span>
@@ -719,7 +718,7 @@
             <div class="flex-grow-1">
               <h3 class="mb-0">University of California, Davis</h3>
               <div class="subheading mb-3">
-                Bachelor of Science, Computer Science Program
+                <i class="fas fa-graduation-cap"></i> Bachelor of Science, Computer Science Program
               </div>
               <p>GPA: (3.8/4.0)</p>
             </div>
@@ -733,7 +732,7 @@
       <!-- Skills-->
       <section class="resume-section" id="skills">
         <div class="resume-section-content">
-          <h2 class="mb-5">Skills</h2>
+          <h2 class="mb-5"><i class="fas fa-american-sign-language-interpreting"></i> Skills</h2>
           <div class="subheading mb-3">Programming Languages & Tools</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item"><i class="fab fa-java"></i></li>
@@ -774,60 +773,117 @@
       <!-- Certifications -->
       <section class="resume-section" id="awards">
         <div class="resume-section-content">
-          <h2 class="mb-5">Certifications</h2>
+          <h2 class="mb-5"><i class="fas fa-award"></i> Certifications</h2>
           <ul class="fa-ul mb-0">
             <li>
               <span class="fa-li"
                 ><i class="fas fa-trophy text-warning"></i
               ></span>
               Google Analytics Individual Qualification (GAIQ)<br />
-              <a href="https://skillshop.exceedlms.com/student/award/44920307"
-                >www.skillshop.exceedlms.com/student/award/44920307</a
+              <a href="https://skillshop.exceedlms.com/student/award/44920307" target="_blank"
+                ><button type="button" class="btn btn-sm">skillshop.exceedlms.com/student/award/44920307</button></a
               >
             </li>
             <li>
               <span class="fa-li"
                 ><i class="fas fa-trophy text-warning"></i
               ></span>
-              Data Engineering on Google Cloud Platform (5-course
+              Google Analytics Certificate of Completion<br />
+              <a href="https://analytics.google.com/analytics/academy/certificate/psuY_UbXSZG_Ey-06PJszw" target="_blank"
+                ><button type="button" class="btn btn-sm">analytics.google.com/analytics/academy/certificate/psuY_UbXSZG_Ey-06PJszw</button></a
+              >
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              Data Engineering on Google Cloud Platform (<i class="fas fa-list-ol"></i> 5-course
               Specialization)<br />
               <a
-                href="https://www.coursera.org/account/accomplishments/specialization/certificate/CGQD5JTS9Y6V"
-                >www.coursera.org/account/accomplishments/specialization/certificate/CGQD5JTS9Y6V"</a
+                href="https://www.coursera.org/account/accomplishments/specialization/certificate/CGQD5JTS9Y6V" target="_blank"
+                ><button type="button" class="btn btn-sm">www.coursera.org/account/accomplishments/specialization/certificate/CGQD5JTS9Y6V</button></a
               >
             </li>
             <li>
               <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
-              Serverless Data Analysis with Google BigQuery and Cloud
+                ><i class="fas fa-list-ol"></i></span>
+                <i class="fas fa-caret-right"></i> Building Resilient Streaming Systems on Google Cloud Platform<br />
+              <a
+                href="https://www.coursera.org/account/accomplishments/certificate/9VWN2W4YZRD4" target="_blank"
+                ><button type="button" class="btn btn-sm">www.coursera.org/account/accomplishments/certificate/9VWN2W4YZRD4</button></a
+              >
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-list-ol"></i></span>
+                <i class="fas fa-caret-right"></i> Serverless Data Analysis with Google BigQuery and Cloud
               Dataflow<br />
               <a
-                href="https://www.coursera.org/account/accomplishments/verify/5C39W7Z2FL5T"
-                >www.coursera.org/account/accomplishments/verify/5C39W7Z2FL5T</a
+                href="https://www.coursera.org/account/accomplishments/verify/5C39W7Z2FL5T" target="_blank"
+                ><button type="button" class="btn btn-sm">www.coursera.org/account/accomplishments/verify/5C39W7Z2FL5T</button></a
               >
             </li>
             <li>
               <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
-              Leveraging Unstructured Data with Cloud Dataproc on Google Cloud
+                ><i class="fas fa-list-ol"></i></span>
+                <i class="fas fa-caret-right"></i> Serverless Machine Learning with Tensorflow on Google Cloud Platform<br />
+              <a
+                href="https://www.coursera.org/account/accomplishments/certificate/7PM3Z7GJUZB4" target="_blank"
+                ><button type="button" class="btn btn-sm">www.coursera.org/account/accomplishments/certificate/7PM3Z7GJUZB4</button></a
+              >
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-list-ol"></i></span>
+                <i class="fas fa-caret-right"></i> Leveraging Unstructured Data with Cloud Dataproc on Google Cloud
               Platform<br />
               <a
-                href="https://www.coursera.org/account/accomplishments/verify/WAXJVET8GXWW"
-                >www.coursera.org/account/accomplishments/verify/WAXJVET8GXWW</a
+                href="https://www.coursera.org/account/accomplishments/verify/WAXJVET8GXWW" target="_blank"
+                ><button type="button" class="btn btn-sm">www.coursera.org/account/accomplishments/verify/WAXJVET8GXWW</button></a
+              >
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-list-ol"></i></span>
+                <i class="fas fa-caret-right"></i> Google Cloud Platform Big Data and Machine Learning
+              Fundamentals<br />
+              <a
+                href="https://www.coursera.org/account/accomplishments/verify/XKHVH7FDF26L" target="_blank"
+                ><button type="button" class="btn btn-sm">www.coursera.org/account/accomplishments/verify/XKHVH7FDF26L</button></a
               >
             </li>
             <li>
               <span class="fa-li"
                 ><i class="fas fa-trophy text-warning"></i
               ></span>
-              Google Cloud Platform Big Data and Machine Learning
-              Fundamentals<br />
-              <a
-                href="https://www.coursera.org/account/accomplishments/verify/XKHVH7FDF26L"
-                >www.coursera.org/account/accomplishments/verify/XKHVH7FDF26L</a
+              Technical Support Fundamentals<br />
+              <a href="http://www.coursera.org/account/accomplishments/verify/UYDBWUFSAL9S" target="_blank"
+                ><button type="button" class="btn btn-sm">www.coursera.org/account/accomplishments/verify/UYDBWUFSAL9S</button></a
               >
+              <!-- Modal -->
+  <div class="modal fade" id="LinkModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <!--div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Redirecting...</h4>
+        </div-->
+        <div class="modal-body">
+          <!--Google map-->
+          <div id="map-container" class="z-depth-1-half map-container border" style="height: 600px; width: 800px;">
+            <iframe src="https://maps.google.com/maps?q=Blackrock Drive,Sacramento,CA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+              style="border:0;height: 600px; width: 800px;" allowfullscreen></iframe>
+          </div>
+        </div>
+        <!--div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div-->
+      </div>
+      
+    </div>
+  </div>
             </li>
             <li>
               <span class="fa-li"
@@ -835,12 +891,17 @@
               ></span>
               SCWCD: Sun Certified J2EE Web Component Developer (310 - 080)<br />
             </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              SCJP: Sun Certified J2SE Programmer (310 - 035)<br />
+            </li>
           </ul>
         </div>
       </section>
       <hr class="m-0" />
     </div>
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
       <i class="fas fa-angle-up"></i>
@@ -882,6 +943,46 @@
 
         // document ready
       });
+    </script>
+    <script>
+      $(document).on("keypress", "input", function(e){
+          if(e.which == 13){
+              var inputVal = $(this).val();
+              //alert("Scanning for search tearm: " + inputVal);
+              search(inputVal);
+          }
+      });
+      function search(value) { 
+        //alert('inside search()...'+value);
+        //let input = document.getElementById('searchbar').value;
+        let input = value.toLowerCase(); 
+        //input=input.toLowerCase(); 
+        let x = document.getElementById('page-top'); 
+        console.log(x);  
+        //alert( x.length);
+        if (x.innerHTML.toLowerCase().includes(input)) { 
+                //x.style.display="list-item"; 
+                console.log(input + ' Found');
+                alert(input + ' found within context');
+        } 
+        else { 
+            //x.style.display="none"; 
+            console.log(input + ' Not Found'); 
+            alert(input + ' not found within context');                
+        }
+
+        // for an array of x[]
+        for (i = 0; i < x.length; i++) {  
+            if (x[i].innerHTML.toLowerCase().includes(input)) { 
+                //x[i].style.display="none"; 
+                console.log('Found' + x[i].innerHTML.toLowerCase());
+            } 
+            else { 
+                //x[i].style.display="list-item"; 
+                console.log('Not Found' + x[i].innerHTML.toLowerCase());                 
+            } 
+        } 
+      }
     </script>
   </body>
 </html>
