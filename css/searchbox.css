@@ -72,8 +72,8 @@
 	position: relative;
 	z-index: 2;
 	margin-left: -1.25em;
-	width: 4em;
-	height: 4em;
+	width: 3.5em;
+	height: 3.5em;
 	border-radius: 50%;
 	transform: translate(var(--pos, -10em)) rotate(45deg);
 	background: hsl(calc(336 - var(--i) * 269), calc(77% + var(--i) * 2%), calc(49% + var(--i) * 13%));
