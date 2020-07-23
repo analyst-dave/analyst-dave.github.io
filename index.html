@@ -27,9 +27,10 @@
       type="text/css"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/searchbox.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/stylish-portfolio.min.css" rel="stylesheet" />
-    <link href="css/searchbox.css" rel="stylesheet" />
+    
     <style>
       /****************************************/
       /* custom scroll bar
@@ -78,6 +79,14 @@
         color: #fff;
         opacity: 1;
       }
+      #interest p {
+        background-image:
+        linear-gradient(
+          to right,
+          #f7941d,
+          #8d5022
+        );
+      }
     </style>
   </head>
   <body id="page-top">
@@ -91,15 +100,12 @@
         class="navbar-brand js-scroll-trigger"
         href="mailto:data.analyst.dave@gmail.com"
       >
-        <span class="d-block d-lg-none"
-          ><button
+        <span class="d-block d-lg-none"><button
             type="button"
             href="mailto:data.analyst.dave@gmail.com"
-            class="btn btn-info btn-lg"
-          >
+            class="btn btn-info btn-lg">
             data.analyst.dave@gmail.com
-          </button></span
-        >
+          </button></span>
         <span class="d-none d-lg-block"
           ><img
             class="img-fluid img-profile rounded-circle mx-auto mb-2"
@@ -120,33 +126,33 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item ml-auto">
+          <li class="nav-item subheading ml-auto">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item subheading ml-auto">
             <a class="nav-link js-scroll-trigger" href="#projects"
               >Recent Projects</a
             >
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item subheading ml-auto">
             <a class="nav-link js-scroll-trigger" href="#interests"
               >Interests</a
             >
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item subheading ml-auto">
             <a class="nav-link js-scroll-trigger" href="#experience"
               >Experience</a
             >
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item subheading ml-auto">
             <a class="nav-link js-scroll-trigger" href="#education"
               >Education</a
             >
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item subheading ml-auto">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
-          <li class="nav-item ml-auto">
+          <li class="nav-item subheading ml-auto">
             <a class="nav-link js-scroll-trigger" href="#awards"
               >Certifications</a
             >
@@ -154,11 +160,7 @@
           <li class="nav-item ml-auto">
             <div>
               <!-- the fancy search box here -->
-              <input
-                id="search-btn"
-                type="checkbox"
-                class="nav-item ml-auto"
-              />
+              <input id="search-btn" type="checkbox" class="nav-item ml-auto" />
               <label for="search-btn" class="nav-item ml-auto"
                 >Show search bar</label
               >
@@ -188,24 +190,26 @@
               >data.analyst.dave@gmail.com</a
             >
           </div>
-          <div>
+          <div class="text-center">
             <!-- Button trigger modal -->
-            
             <button
               type="button"
               class="btn btn-info video-btn"
               data-toggle="modal"
               data-src="https://www.youtube.com/embed/qw8j3MA_wyU"
               data-target="#myModal"
-            ><img
-            class="img-fluid rounded"
-            src="assets/img/thumb.jpg"
-            alt=""
-          />
+            >
+              <img
+                class="img-fluid rounded"
+                src="assets/img/thumb.jpg"
+                alt=""
+              />
             </button>
+
             <div class="br">
               <label class="br"><br /></label>
             </div>
+
             <!-- Modal popup -->
             <div
               class="modal fade"
@@ -241,12 +245,21 @@
               </div>
             </div>
           </div>
-          <p class="lead mb-5">
+          <div class="">  
+            <p class="card p-3"
+              style="font-family: Arial, Helvetica, sans-serif; font-size: medium; color: aliceblue; background-color: grey; display: block;">
             I am experienced in leveraging agile frameworks to provide an
-            iterative approach for high level overviews... This site is in
-            progress and meant for aesthetic demostration showcasing various UI
-            components.
+            iterative approach for efficient result... This site is still in progress and
+            meant for aesthetic demostration, showcasing the following UI
+            components: <br/> &#9; · Bootstrap responsive <b>NAVBAR</b>, popover <b>MODAL</b> for videos
+            and a <b>CAROUSEL</b> gallery slider.<br/>   · Custom css search box, scroll bars, smooth
+            scroll as well as portfolio gallery with a custom mouse-over hover effect.<br/>
+            Click on the github link below or here for a  
+            <a class="social-icon" href="https://remy177.github.io/" target="_blank">
+            <button type="button" href="http://remy177.github.io" class="btn btn-info btn-md rounded" target="_blank">
+            <i class="fab fa-github"></i> Live Demo</button> </a> of jQuery datatable to display tabular data.
           </p>
+        </div>
           <div class="social-icons">
             <a
               class="social-icon"
@@ -286,6 +299,24 @@
             </div>
             <div class="row no-gutters">
               <div class="col-lg-6">
+                <a class="portfolio-item" href="https://remy177.github.io/" target="_blank">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <div class="h3">D3 + Custom CSS</div>
+                      <p class="mb-0 h4" style="color: aliceblue;">
+                        Technology Stack: Python, MongoDB, Webdriver, Bootstrap,
+                        Splinter
+                      </p>
+                    </div>
+                  </div>
+                  <img
+                    class="img-fluid"
+                    src="assets/img/screenshot7-21-2020_2.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-lg-6">
                 <a class="portfolio-item" href="#!">
                   <div class="caption">
                     <div class="caption-content">
@@ -307,16 +338,15 @@
                 <a class="portfolio-item" href="#!">
                   <div class="caption">
                     <div class="caption-content">
-                      <div class="h3">D3 + Custom CSS</div>
+                      <div class="h3">D3JS</div>
                       <p class="mb-0 h4" style="color: aliceblue;">
-                        Technology Stack: Python, MongoDB, Webdriver, Bootstrap,
-                        Splinter
+                        Technology Stack: D3.js, Bubble Chart Dashboard... live demo coming soon
                       </p>
                     </div>
                   </div>
                   <img
                     class="img-fluid"
-                    src="assets/img/screenshot7-21-2020_2.png"
+                    src="assets/img/screenshot7-22-2020_4.png"
                     alt=""
                   />
                 </a>
@@ -325,34 +355,15 @@
                 <a class="portfolio-item" href="#!">
                   <div class="caption">
                     <div class="caption-content">
-                      <div class="h3">Orange</div>
+                      <div class="h3">Excel</div>
                       <p class="mb-0 h4" style="color: aliceblue;">
-                        Technology Stack: Python, MongoDB, Webdriver, Bootstrap,
-                        Splinter
+                        Technology Stack: Excel Pivot Tables and Charts... live demo coming soon
                       </p>
                     </div>
                   </div>
                   <img
                     class="img-fluid"
-                    src="assets/img/screenshot7-21-2020_3.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                  <div class="caption">
-                    <div class="caption-content">
-                      <div class="h3">Teal</div>
-                      <p class="mb-0 h4" style="color: aliceblue;">
-                        Technology Stack: Python, MongoDB, Webdriver, Bootstrap,
-                        Splinter
-                      </p>
-                    </div>
-                  </div>
-                  <img
-                    class="img-fluid"
-                    src="assets/img/screenshot7-21-2020_4.png"
+                    src="assets/img/screenshot7-22-2020_2.png"
                     alt=""
                   />
                 </a>
@@ -367,24 +378,6 @@
       <section class="resume-section" id="interests">
         <div class="resume-section-content">
           <h3 class="mb-5">Interests</h3>
-          <h5
-            class="rounded p-2"
-            style="color: white; background-color: grey; opacity: 0.8;"
-          >
-            Father of a baby girl, love being outdoor with the family and Parker
-            the white boxer... I also enjoy mountain biking, free climbing, and
-            snowboarding.
-          </h5>
-          <h5 class="mb-0 rounded" style="color: grey;">
-            I am an aspiring chef, and I spend a large amount of my free time
-            exploring the latest technology advancements in the front-end web
-            development world.
-          </h5>
-        </div>
-
-        <div class="br">
-          <label class="br"><br /></label>
-        </div>
 
         <style>
           .carousel-item {
@@ -399,7 +392,6 @@
             background-attachment: fixed;
           }
         </style>
-        <br />
         <!-- Carousel style gallery -->
         <div
           id="carouselExampleIndicators"
@@ -416,7 +408,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           </ol>
-          <div class="carousel-inner rounded-bottom" role="listbox">
+          <div class="carousel-inner rounded" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div
               class="carousel-item active"
@@ -505,6 +497,26 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+
+        <div class="br">
+          <label class="br"><br /></label>
+        </div>
+
+        <div class="col-md-12">  
+          <p class="col-md-8 card p-2 m-2"
+            style="float:right; font-family: Arial, Helvetica, sans-serif; font-size: medium; color: aliceblue; background-color: grey; opacity: 0.8;">
+            <b>Father of a baby girl, love being outdoor with the family and
+            the dog... I also enjoy mountain biking, free climbing, and
+            snowboarding.</b>
+          </p>
+          <p class="col-md-8 rounded p-2 m-2" 
+              style="float:left; font-family: Arial, Helvetica, sans-serif; font-size: medium; color: grey; background-color: black; opacity: 0.8;">
+              <b>I am an aspiring chef, and I spend a large amount of my free time
+              exploring the latest technology advancements in the front-end web
+              development world.</b>
+          </p>
+        </div>
+
       </section>
       <hr class="m-0" />
       <!-- Experience-->
@@ -827,11 +839,7 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      type="text/javascript"
-    ></script>
-
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" type="text/javascript"></script-->
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
