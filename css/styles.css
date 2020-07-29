@@ -35,7 +35,7 @@
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
-  --breakpoint-lg: 888px;
+  --breakpoint-lg: 968px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -557,7 +557,7 @@ pre code {
     max-width: 720px;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .container {
     max-width: 960px;
   }
@@ -586,7 +586,7 @@ pre code {
     max-width: 720px;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
@@ -1256,7 +1256,7 @@ pre code {
     margin-left: 91.6666666667%;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
@@ -1959,7 +1959,7 @@ pre code {
     border: 0;
   }
 }
-@media (max-width: 887.98px) {
+@media (max-width: 967.98px) {
   .table-responsive-lg {
     display: block;
     width: 100%;
@@ -3059,7 +3059,7 @@ input[type=button].btn-block {
     left: auto;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .dropdown-menu-lg-left {
     right: auto;
     left: 0;
@@ -4143,7 +4143,7 @@ input[type=button].btn-block {
     display: none;
   }
 }
-@media (max-width: 887.98px) {
+@media (max-width: 967.98px) {
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid,
 .navbar-expand-lg > .container-sm,
@@ -4154,7 +4154,7 @@ input[type=button].btn-block {
     padding-left: 0;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -5147,7 +5147,7 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-left-width: 1px;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .list-group-horizontal-lg {
     flex-direction: row;
   }
@@ -5571,7 +5571,7 @@ a.close.disabled {
     max-width: 300px;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .modal-lg,
 .modal-xl {
     max-width: 800px;
@@ -6420,7 +6420,7 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .d-lg-none {
     display: none !important;
   }
@@ -6982,7 +6982,7 @@ button.bg-dark:focus {
     align-self: stretch !important;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .flex-lg-row {
     flex-direction: row !important;
   }
@@ -7294,7 +7294,7 @@ button.bg-dark:focus {
     float: none !important;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .float-lg-left {
     float: left !important;
   }
@@ -8794,7 +8794,7 @@ button.bg-dark:focus {
     margin-left: auto !important;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .m-lg-0 {
     margin: 0 !important;
   }
@@ -9732,7 +9732,7 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   .text-lg-left {
     text-align: left !important;
   }
@@ -9957,11 +9957,11 @@ h3 {
     size: a3;
   }
   body {
-    min-width: 888px !important;
+    min-width: 968px !important;
   }
 
   .container {
-    min-width: 888px !important;
+    min-width: 968px !important;
   }
 
   .navbar {
@@ -10005,7 +10005,7 @@ body {
   color: #6c757d;
 }
 
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   body {
     padding-top: 0;
     padding-left: 17rem;
@@ -10045,7 +10045,7 @@ p.lead {
   outline-color: #d48a6e;
 }
 
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   #sideNav {
     text-align: center;
     position: fixed;
@@ -10083,6 +10083,16 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+}
+.social-icons .social-icon-small {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
 }
 .social-icons .social-icon {
   display: inline-flex;
@@ -10125,7 +10135,7 @@ section.resume-section .resume-section-content {
     min-height: 100vh;
   }
 }
-@media (min-width: 888px) {
+@media (min-width: 968px) {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
