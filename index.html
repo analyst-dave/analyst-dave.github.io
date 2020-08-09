@@ -79,169 +79,158 @@
         color: #fff;
         opacity: 1;
       }
-      #interest p {
-        background-image:
-        linear-gradient(
-          to right,
-          #f7941d,
-          #8d5022
-        );
-      }
     </style>
     <style>
-nav {
-  background-image: "assets/img/cool-background.png";
-}
-      /* stroke */
-nav.stroke ul li a,
-nav.fill ul li a {
-  position: relative;
-}
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
-}
-nav.stroke ul li a:hover:after {
-  width: 100%;
-}
+    /* stroke */
+    nav.stroke ul li a,
+    nav.fill ul li a {
+      position: relative;
+    }
+    nav.stroke ul li a:after,
+    nav.fill ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #aaa;
+      height: 1px;
+    }
+    nav.stroke ul li a:hover:after {
+      width: 100%;
+    }
 
-nav.fill ul li a {
-  transition: all 1s;
-}
+    nav.fill ul li a {
+      transition: all 1s;
+    }
 
-nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
-}
-nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
-}
-nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}
-/* Circle */
-nav.circle ul li a {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-nav.circle ul li a:after {
-  display: block;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: '.';
-  color: transparent;
-  width: 1px;
-  height: 1px;
-  border-radius: 50%;
-  background: transparent;
-}
-nav.circle ul li a:hover:after {
-  -webkit-animation: circle 2s ease-in forwards;
-}
+    nav.fill ul li a:after {
+      text-align: left;
+      content: '.';
+      margin: 0;
+      opacity: 0;
+    }
+    nav.fill ul li a:hover {
+      color: #fff;
+      z-index: 1;
+    }
+    nav.fill ul li a:hover:after {
+      z-index: -10;
+      animation: fill 1s forwards;
+      -webkit-animation: fill 1s forwards;
+      -moz-animation: fill 1s forwards;
+      opacity: 1;
+    }
+    /* Circle */
+    nav.circle ul li a {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    nav.circle ul li a:after {
+      display: block;
+      position: absolute;
+      margin: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: '.';
+      color: transparent;
+      width: 1px;
+      height: 1px;
+      border-radius: 50%;
+      background: transparent;
+    }
+    nav.circle ul li a:hover:after {
+      -webkit-animation: circle 2s ease-in forwards;
+    }
 
-/* SHIFT */
-nav.shift ul li a {
-  position:relative;
-  z-index: 1;
-}
-nav.shift ul li a:hover {
-  color: #91640F;
-}
-nav.shift ul li a:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  height: 1px;
-  content: '.';
-  color: transparent;
-  background: #F1C40F;
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-}
-nav.shift ul li a:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
-}
-/* Keyframes */
-@-webkit-keyframes fill {
-  0% {
-    width: 0%;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: slategrey;
-    border-top-right-radius: 100%;
-  }
-}
+    /* SHIFT */
+    nav.shift ul li a {
+      position:relative;
+      z-index: 1;
+    }
+    nav.shift ul li a:hover {
+      color: #91640F;
+    }
+    nav.shift ul li a:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      height: 1px;
+      content: '.';
+      color: transparent;
+      background: #F1C40F;
+      visibility: none;
+      opacity: 0;
+      z-index: -1;
+    }
+    nav.shift ul li a:hover:after {
+      opacity: 1;
+      visibility: visible;
+      height: 100%;
+    }
+    /* Keyframes */
+    @-webkit-keyframes fill {
+      0% {
+        width: 0%;
+        height: 1px;
+      }
+      50% {
+        width: 100%;
+        height: 1px;
+      }
+      100% {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: slategrey;
+        border-top-right-radius: 100%;
+      }
+    }
 
-/* Keyframes */
-@-webkit-keyframes circle {
-  0% {
-    width: 1px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    height: 1px;
-    z-index: -1;
-    background: lightgrey;
-    border-radius: 100%;
-  }
-  100% {
-    background: #aaa;
-    height: 5000%;
-    width: 5000%;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 0;
-  }
-}
+    /* Keyframes */
+    @-webkit-keyframes circle {
+      0% {
+        width: 1px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 1px;
+        z-index: -1;
+        background: lightgrey;
+        border-radius: 100%;
+      }
+      100% {
+        background: #aaa;
+        height: 5000%;
+        width: 5000%;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+      }
+    }
     </style>
   </head>
   <body id="page-top">
     <!-- Navigation-->
     <nav id="sideNav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fill"
-         style="opacity: 0.95;background-image:
+         style="opacity: 0.95; background-image:
                 linear-gradient(
                   to right,
                   #17a2b8,
@@ -344,6 +333,28 @@ nav.shift ul li a:hover:after {
           <h2 class="mb-0">
             <a href="https://analyst-dave.github.io/"><i class="fas fa-address-card"></i> analyst-dave<span class="text-info">.github.io</span></a>
           </h2>
+          <!-- Modal -->
+          <div class="modal fade" id="LinkModal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <!--div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Redirecting...</h4>
+                </div-->
+                <div class="modal-body">
+                  <!--Google map-->
+                  <div id="map-container" class="z-depth-1-half map-container border" style="height: 600px; width: 800px;">
+                    <iframe src="https://maps.google.com/maps?q=Blackrock Drive,Sacramento,CA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                      style="border:0;height: 600px; width: 800px;" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <!--div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div-->
+              </div>
+            </div>
+          </div>
           <div class="subheading mb-5"><a type="button" class="btn btn-sm" data-toggle="modal" data-target="#LinkModal">
             <i class="fas fa-home"></i> 168 Blackrock Drive · Sacramento, CA 95835 <i class="fas fa-map-marked-alt"></i> </a> <i class="fas fa-mobile-alt"></i> (408) 909-3681 
             <a href="mailto:data.analyst.dave@gmail.com"> <i class="fas fa-envelope"></i> data.analyst.dave@gmail.com</a>
@@ -473,9 +484,9 @@ nav.shift ul li a:hover:after {
                   <div class="caption">
                     <div class="caption-content">
                       <div>&nbsp;</div>
-                      <div class="h4">D3 + Plotly.js</div>
+                      <div class="h4">Plotly.js</div>
                       <p class="mb-0 h5" style="color: aliceblue;">
-                        Interactive Dashboard w/bubble chart and custom guage
+                        D3 data-bound interactive dashboard w/Plotly bubble chart and custom guage
                       </p>
                     </div>
                   </div>
@@ -491,7 +502,7 @@ nav.shift ul li a:hover:after {
                   <div class="caption">
                     <div class="caption-content">
                       <div>&nbsp;</div>
-                      <div class="h4">D3 + DataTable</div>
+                      <div class="h4">jQuery DataTable</div>
                       <p class="mb-0 h5" style="color: aliceblue;">
                         D3, jQuery, DataTable, Bootstrap.
                       </p>
@@ -500,6 +511,24 @@ nav.shift ul li a:hover:after {
                   <img
                     class="img-fluid"
                     src="assets/img/d3datatable.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a class="portfolio-item" href="http://remy177.github.io/HW16-D3" target="_blank">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <div>&nbsp;</div>
+                      <div class="h4">D3 SVG Transition</div>
+                      <p class="mb-0 h5" style="color: aliceblue;">
+                        D3 csv import, svg groups, tips and transition... live demo coming soon
+                      </p>
+                    </div>
+                  </div>
+                  <img
+                    class="img-fluid"
+                    src="assets/img/D3.png"
                     alt=""
                   />
                 </a>
@@ -522,7 +551,7 @@ nav.shift ul li a:hover:after {
                   />
                 </a>
               </div>
-              <div class="col-lg-6">
+              <!--div class="col-lg-6">
                 <a class="portfolio-item" href="#!">
                   <div class="caption">
                     <div class="caption-content">
@@ -539,7 +568,7 @@ nav.shift ul li a:hover:after {
                     alt=""
                   />
                 </a>
-              </div>
+              </div-->
             </div>
           </div>
         </div>
@@ -1209,7 +1238,7 @@ nav.shift ul li a:hover:after {
           <div>&nbsp;<br/></div>    
             
           <ul class="fa-ul mb-0">
-            <li>
+            <!--li>
               <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
               Google Analytics Individual Qualification (GAIQ)<br />
               <a href="https://skillshop.exceedlms.com/student/award/44920307" target="_blank">
@@ -1288,31 +1317,7 @@ nav.shift ul li a:hover:after {
               <a href="http://www.coursera.org/account/accomplishments/verify/UYDBWUFSAL9S" target="_blank"
                 ><button type="button" class="btn btn-sm">www.coursera.org/account/accomplishments/verify/UYDBWUFSAL9S</button></a
               >
-              <!-- Modal -->
-  <div class="modal fade" id="LinkModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <!--div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Redirecting...</h4>
-        </div-->
-        <div class="modal-body">
-          <!--Google map-->
-          <div id="map-container" class="z-depth-1-half map-container border" style="height: 600px; width: 800px;">
-            <iframe src="https://maps.google.com/maps?q=Blackrock Drive,Sacramento,CA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-              style="border:0;height: 600px; width: 800px;" allowfullscreen></iframe>
-          </div>
-        </div>
-        <!--div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div-->
-      </div>
-      
-    </div>
-  </div>
-            </li>
+            </li-->
             <li>
               <span class="fa-li"
                 ><i class="fas fa-trophy text-warning"></i
